@@ -9,7 +9,18 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play index.</tw-noscript></noscript></tw-story>
-<tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="7C4A74F5-EC44-4C33-98A1-27F162BBE6FB" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="fallen-bike"] { 
+<tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="7C4A74F5-EC44-4C33-98A1-27F162BBE6FB" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+tw-link, tw-link:link, tw-link:visited, tw-link.visited {
+  color: #ffd381;
+  text-decoration: none;
+}
+tw-link:focus, tw-link:hover, tw-link:active, tw-link.visited:hover {
+  color: #F0EAD6;
+  text-decoration: none;
+}
+
+tw-story[tags~="fallen-bike"] { 
   background-image: url(./images/fallen-bike.jpg);  
   background-size: cover;  
   background-repeat: no-repeat;  
@@ -24,13 +35,7 @@ tw-passage p {
   line-height:1.2em;
   text-indent:2em;
 }
-
-
-/* only applies when you’re on the “Turn around.” passage */
-tw-passage#Forest {
-  background: url('fallen bike.jpg') no-repeat center center;
-  background-size: cover;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="2475,650" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The bells ring once more.
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="2475,650" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The bells ring once more.
 
 They come down lonely from the baroque lips of the Dom Tower, getting into the canal and resurrecting through the empty streets. The snow continues to fall. It falls like embers in the lamplight, ignoring the pre-dawn black that coats the walls and doors and bicycles.
 
@@ -103,7 +108,7 @@ The dark comes back. The snow returns. Maryanne is gone. The cat meows somewhere
 (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
 [ [[Go search for the cat.]]]
 (t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Follow the bicycle.]]]</tw-passagedata><tw-passagedata pid="14" name="Go search for the cat." tags="" position="2425,1150" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat&#39;s jingles from somewhere down or up the bent black alleyway. It folds in around the flowers sprouting through the cobblestones. Blue, red, yellow little flowers, unbroken in the empty streets. 
+[ [[Follow the bicycle.]]]</tw-passagedata><tw-passagedata pid="14" name="Go search for the cat." tags="" position="2450,1200" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat&#39;s jingles from somewhere down or up the bent black alleyway. It folds in around the flowers sprouting through the cobblestones. Blue, red, yellow little flowers, unbroken in the empty streets. 
 
 The cat meows. It is standing on the corner of the tall, terracota rooftops. It looks at me, then away to the shadow of the Dom Tower—silent, threatening to ring its menotonous bell again.
 ](t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
@@ -130,18 +135,17 @@ He is sat before the large red doors of a square brick church. He purrs, rolls a
 [ 
 [[Try the doors.]]]
 (t8n-delay: 3.75s) + (t8n: &quot;fade-down&quot;) 
-[ [[Pet the cat.]]]</tw-passagedata><tw-passagedata pid="17" name="Follow the bicycle." tags="fallen-bike" position="2675,1075" size="100,100">&lt;img class=&quot;story-image&quot; src=&quot;./images/example.jpg&quot; alt=&quot;fallen-bike&quot; /&gt;
+[ [[Pet the cat.]]]</tw-passagedata><tw-passagedata pid="17" name="Follow the bicycle." tags="fallen-bike" position="2700,1050" size="100,100">&lt;img class=&quot;story-image&quot; src=&quot;./images/fallen-bike.jpg&quot; alt=&quot;fallen-bike&quot; /&gt;
 
 (char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[It is a short alley, lit by low hanging lanterns and dim christmas lights. I forgot it was Christmas. 
 
 There is no sign of the woman in the yellow raincoat, only a white stone building with bright red shutters and tall arched windows. It stretches up and out at the intersection at the end of the alleyway.
 
 The bicycle rings again—over and over, twice at a time—towards the building.
-](t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
-[ 
-[[Go towards the building.]]]
+](t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;)[ 
+[[[Go towards the building.]]]]
 (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
-[ [[Go search for the cat.]]]</tw-passagedata><tw-passagedata pid="18" name="Go towards the building." tags="" position="2700,1225" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The red shutters fold outwards like petals in a white bed. All the pretty windows are fogged and lightless, except for one. 
+[[[[Go search for the cat.]]]]</tw-passagedata><tw-passagedata pid="18" name="Go towards the building." tags="" position="2700,1225" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The red shutters fold outwards like petals in a white bed. All the pretty windows are fogged and lightless, except for one. 
 
 This one, on the second floor, has a candle burning. The snow is getting in through its open window. On one side of the candle lies a yellow raincoat.
 ](t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
@@ -218,7 +222,7 @@ One staircase leads down into the courtyard. Another leads up to some second flo
 (if: (visited: &quot;Answer.&quot;))[
  Pretending to sleep beside someone you know you’re losing, it’s a lot like the insomniac effects that come after the break. You are neither here, nor there… But some third category. All your imperceptible thoughts attack you at once, and you know they’re there but cannot grasp them. They exist, but they don’t. You exist. But don’t.
  ] (if: (visited: &quot;Climb up.&quot;))[
- Guilt monologue. Feeling like he should have picked up on her unhappiness earlier. Feeling like he should have given her her space. Despaired that she felt she needed to cut herself off from him. Ashamed that she felt she needed to cut herself off from him and everyone they knew.] ]</tw-passagedata><tw-passagedata pid="28" name="Keep running." tags="" position="2600,1875" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="Look to the tower." tags="" position="2450,1525" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="Go upstairs." tags="" position="3425,1775" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat is scratching at the foot of a thin red door.
+ Guilt monologue. Feeling like he should have picked up on her unhappiness earlier. Feeling like he should have given her her space. Despaired that she felt she needed to cut herself off from him. Ashamed that she felt she needed to cut herself off from him and everyone they knew.] ]</tw-passagedata><tw-passagedata pid="28" name="Keep running." tags="" position="2600,1875" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="Look to the tower." tags="" position="2450,1400" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="Go upstairs." tags="" position="3425,1775" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat is scratching at the foot of a thin red door.
 ](t8n-delay: 1s) + (t8n: &quot;fade-down&quot;) 
 [
 [[Turn the handle.]]]
@@ -351,7 +355,7 @@ It gets into my hands with heat, and I don&#39;t know why, but I feel it all aga
 The cat comes back, pressing into my leg and passing by, moving on.
 ](t8n-delay: 7.5s) + (t8n: &quot;fade-down&quot;) 
 [
-[[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="47" name="Turn the corner." tags="" position="2425,1275" size="100,100"></tw-passagedata></tw-storydata>
+[[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="47" name="Turn the corner." tags="" position="2300,1400" size="100,100"></tw-passagedata><tw-passagedata pid="48" name="[Go towards the building." tags="" position="2825,1175" size="100,100"></tw-passagedata><tw-passagedata pid="49" name="[[Go search for the cat." tags="" position="2575,1175" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
