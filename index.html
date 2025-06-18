@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play index.</tw-noscript></noscript></tw-story>
-<tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="7C4A74F5-EC44-4C33-98A1-27F162BBE6FB" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+<tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="7C4A74F5-EC44-4C33-98A1-27F162BBE6FB" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
@@ -20,6 +20,12 @@ tw-link, tw-link:link, tw-link:visited, tw-link.visited {
 tw-link:focus, tw-link:hover, tw-link:active, tw-link.visited:hover {
   color: #F0EAD6;
   text-decoration: none;
+}
+
+tw-story[tags~="clarity"] { 
+  background-image: url(./images/clarity.jpg);  
+  background-size: cover;  
+  background-repeat: no-repeat;  
 }
 
 tw-story[tags~="domtower"] { 
@@ -129,34 +135,7 @@ The black cat meows again, passing by to vanish once more between the in-leaning
 [ 
 [[Follow the cat.]]]
 (t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Don&#39;t follow the cat.]]]</tw-passagedata><tw-passagedata pid="3" name="&quot;Why are you awake?&quot;" tags="distance" position="1125,2150" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[//&lt;p&gt;&quot;I haven&#39;t tried to sleep yet&quot; she says.&lt;p&gt;&quot;It&#39;s not so good to be up so late,&quot; I tell her.&lt;p&gt;&quot;Late becomes early eventually.&quot;&lt;p&gt;I laugh, but she doesn&#39;t. She just keeps staring.// 
-]
-(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
-[ [[Move on.]]]
-(t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[&quot;What are you looking at?&quot;]]]
-(t8n-delay: 3s) + (t8n: &quot;fade-down&quot;) 
-[ [[Say nothing. Sit with her.]]]</tw-passagedata><tw-passagedata pid="4" name="&quot;What are you looking at?&quot;" tags="distance" position="800,2125" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[
-
-
-
-(if: (visited: &quot;Answer.&quot;))[
-I should&#39;ve seen it coming. I should&#39;ve seen it then. Her faces in the kitchen. Her elsewhereness in bed. Was she ever really there? I should&#39;ve let her go. Where did she go?
-
-I can&#39;t let her go. 
-
-
-
-
-The canal narrows as the brown bricked buildings cluster closer together. There is a featureless man silhouetted on the other bridge. The man knows who he is. The waters are slow moving through the canal. There is moss surrounding doors down there, doors that lead to nowhere.
-
-The other man stands there. Says nothing. You hate him more than ever. The smell of too-much perfume.
-
-//&lt;p&gt;Memory. It is quiet. The man is laying in bed, pretending to sleep when she gets home. He hears her turn the car off. Turn the key in the door softly. She comes in, undresses, slips into bed beside him silently. After a while she kisses him on his shoulder. Wraps her arms around him. &quot;On the roof again?&quot; he says after a time. &quot;Something like that,&quot; she says. &quot;You must&#39;ve seen the woman who came over tonight then.&quot; &quot;I was only joking. What woman?&quot; &quot;I didn&#39;t get her name.&quot; &quot;What woman?&quot;//
-]
-
-(t8n-delay: 6.5s) + (t8n: &quot;fade-down&quot;) 
-[[Move on.]]</tw-passagedata><tw-passagedata pid="5" name="Pet the black cat." tags="domtower" position="2550,950" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[He shows his soft belly. I pet him. He nips my fingers, wrapping his paws around my wrist. Now and then he stops to lick my knuckles in apology.
+[ [[Don&#39;t follow the cat.]]]</tw-passagedata><tw-passagedata pid="3" name="Pet the black cat." tags="domtower" position="2550,950" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[He shows his soft belly. I pet him. He nips my fingers, wrapping his paws around my wrist. Now and then he stops to lick my knuckles in apology.
 
 A bike goes by. Its bell rings. The cat gets up, alert. The rider is a woman in a bright yellow raincoat. She is hard to make out in the pre-dawn dark. She is smiling as she passes, looking back, as if to say I am alive.
 
@@ -165,7 +144,7 @@ Then she turns into an alley. The cat has vanished as well now. But its voice is
 [ 
 [[Go search for the cat.]]]
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Follow the bicycle.]]]</tw-passagedata><tw-passagedata pid="6" name="Try the doors." tags="domtower" position="2400,950" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The brass handles don&#39;t budge. Something smells like unset paint. The red wooden doors are dripping into the snow. The cat claws at my pant-leg. I step back, fall as the dark fades.
+[ [[Follow the bicycle.]]]</tw-passagedata><tw-passagedata pid="4" name="Try the doors." tags="domtower" position="2400,950" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The brass handles don&#39;t budge. Something smells like unset paint. The red wooden doors are dripping into the snow. The cat claws at my pant-leg. I step back, fall as the dark fades.
 
 
 //&lt;p&gt;The light is in my eyes. The cat is on my chest. Maryanne is laughing, standing on our front verandah, halfway up the stepladder. Her hair and cheeks are full of sunlight. &quot;Are you bleeding?&quot; she says. &quot;It&#39;s all good if you are. I could use more red for the door.&quot;&lt;p&gt;&quot;Don&#39;t bother to help me up,&quot; I tell her.&lt;p&gt;&quot;That cat is out to get you.&quot;&lt;p&gt;&quot;I think he just doesn&#39;t like the colour you chose.&quot;&lt;p&gt;&quot;What&#39;s wrong with red?&quot;&lt;p&gt;&quot;Nothing.&quot;&lt;p&gt;&quot;I agree.&quot;&lt;p&gt;&quot;But don&#39;t you think it&#39;s somewhat aggressive?&quot;&lt;p&gt;&quot;We&#39;ve been through this.&quot;&lt;p&gt;&quot;Yeah, yeah. Passion, romance, poppies, all that. But the landlord might think different.&quot;&lt;p&gt;&quot;Everybody wants love in their life.&quot;//
@@ -176,21 +155,21 @@ The dark comes back. The snow returns. Maryanne is gone. The cat meows somewhere
 [ 
 [[Go search for the cat.]]]
 (t8n-delay: 8.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Lay a while.]]]</tw-passagedata><tw-passagedata pid="7" name="Lay a while longer." tags="domtower" position="2175,1200" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The sun never comes. The voice of the cat never goes. Both of them feel more distant than before.
+[ [[Lay a while.]]]</tw-passagedata><tw-passagedata pid="5" name="Lay a while longer." tags="domtower" position="2175,1200" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The sun never comes. The voice of the cat never goes. Both of them feel more distant than before.
 ](t8n-delay: 1.5s) + (t8n: &quot;fade-down&quot;) 
 [ 
 [[Lay a while longer.]]]
 (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
 [ [[Go search for the cat.]]]
 (t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Follow the bicycle.]]]</tw-passagedata><tw-passagedata pid="8" name="Go search for the cat." tags="footprint" position="2450,1200" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat&#39;s collar jingles from somewhere up the bent black laneway. The sound enfolds the flowers sprouting through the cobblestones. Little flowers of blue, red and yellow, unbroken in the empty streets. 
+[ [[Follow the bicycle.]]]</tw-passagedata><tw-passagedata pid="6" name="Go search for the cat." tags="footprint" position="2450,1200" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat&#39;s collar jingles from somewhere up the bent black laneway. The sound enfolds the flowers sprouting through the cobblestones. Little flowers of blue, red and yellow, unbroken in the empty streets. 
 
 Then the cat meows. It is standing on the corner of the winged terracota rooftops. The cat looks down to me and then away to the shadow of the Dom Tower in the distance. The tower is stoic, threatening to ring its menotonous brass bell again.
 ](t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
 [ 
 [[Look to the tower.]]]
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Turn the corner.]]]</tw-passagedata><tw-passagedata pid="9" name="Lay a while." tags="domtower" position="2250,1050" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The buildings go up. They keep going up until they merge with the sky. 
+[ [[Turn the corner.]]]</tw-passagedata><tw-passagedata pid="7" name="Lay a while." tags="domtower" position="2250,1050" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The buildings go up. They keep going up until they merge with the sky. 
 
 I don&#39;t need to get up. I could lay here forever, even when the sun comes back with crowds. Let everyone see my insomnia.
 
@@ -203,14 +182,14 @@ The cat is gone too. But it&#39;s voice is calling somewhere down the street.
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Go search for the cat.]]]
 (t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Follow the bicycle.]]]</tw-passagedata><tw-passagedata pid="10" name="Follow the cat." tags="domtower" position="2625,800" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The little yellow eyes of the cat beam at me through the dark—black amongst black between archaic apartments. His tail sweeps snow from the cobblestones. Then he meows again, reminds me how alone I am.
+[ [[Follow the bicycle.]]]</tw-passagedata><tw-passagedata pid="8" name="Follow the cat." tags="domtower" position="2625,800" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The little yellow eyes of the cat beam at me through the dark—black amongst black between archaic apartments. His tail sweeps snow from the cobblestones. Then he meows again, reminds me how alone I am.
 
 He is sat before the large red doors of a square brick church. He purrs, rolls around in the snow at the feet of the door, collar jingling.
 ](t8n-delay: 3.25s) + (t8n: &quot;fade-down&quot;) 
 [ 
 [[Try the doors.]]]
 (t8n-delay: 3.75s) + (t8n: &quot;fade-down&quot;) 
-[ [[Pet the black cat.]]]</tw-passagedata><tw-passagedata pid="11" name="Follow the bicycle." tags="fallen-bike" position="2700,1050" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[It is a short alley, lit by low hanging lanterns and dim christmas lights. I forgot it was Christmas. 
+[ [[Pet the black cat.]]]</tw-passagedata><tw-passagedata pid="9" name="Follow the bicycle." tags="fallen-bike" position="2700,1050" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[It is a short alley, lit by low hanging lanterns and dim christmas lights. I forgot it was Christmas. 
 
 There is no sign of the woman in the yellow raincoat, only a white stone building with bright red shutters and tall arched windows. It stretches up and out at the intersection at the end of the alleyway.
 
@@ -219,7 +198,7 @@ The bicycle rings again—over and over, twice at a time—towards the building.
 [ [[Go towards the building.]]]]
 (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
 [ [[Go search for the cat.]]]
-</tw-passagedata><tw-passagedata pid="12" name="Go towards the building." tags="fallen-bike" position="2700,1225" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The red shutters fold outwards like petals in a white bed. All the pretty windows are fogged and lightless, except for one. 
+</tw-passagedata><tw-passagedata pid="10" name="Go towards the building." tags="fallen-bike" position="2700,1225" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The red shutters fold outwards like petals in a white bed. All the pretty windows are fogged and lightless, except for one. 
 
 This one, on the second floor, has a candle burning. The snow is getting in through its open panels. On one side of the candle lies a yellow raincoat.
 ](t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
@@ -228,7 +207,7 @@ This one, on the second floor, has a candle burning. The snow is getting in thro
 (t8n-delay: 3s) + (t8n: &quot;fade-down&quot;) 
 [ [[Go search for the cat.]]]
 (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Watch the snowfall on the window.]]]</tw-passagedata><tw-passagedata pid="13" name="Call up to the woman." tags="fallen-bike" position="2700,1450" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The woman comes to the window, looking to the street. Her expression is vague in the bleak, dawnless snow. She stares at me, through me into nothingness—absent and morose. 
+[ [[Watch the snowfall on the window.]]]</tw-passagedata><tw-passagedata pid="11" name="Call up to the woman." tags="fallen-bike" position="2700,1450" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The woman comes to the window, looking to the street. Her expression is vague in the bleak, dawnless snow. She stares at me, through me into nothingness—absent and morose. 
 
 She isn&#39;t who I thought she was.
 ](t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
@@ -237,7 +216,7 @@ She isn&#39;t who I thought she was.
 (t8n-delay: 3s) + (t8n: &quot;fade-down&quot;) 
 [ [[Call to her again.]]]
 (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Go search for the cat.]]]</tw-passagedata><tw-passagedata pid="14" name="Apologise for the mistake." tags="fallen-bike" position="2850,1450" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The woman turns to face the obscurity of her room. A man comes and stands beside her. He is muscular, faceless and menacing. The woman puts out the candle. The window turns black, but I know they&#39;re there, sitting and possibly watching as the snow continues to gather on the window seal.
+[ [[Go search for the cat.]]]</tw-passagedata><tw-passagedata pid="12" name="Apologise for the mistake." tags="fallen-bike" position="2850,1450" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The woman turns to face the obscurity of her room. A man comes and stands beside her. He is muscular, faceless and menacing. The woman puts out the candle. The window turns black, but I know they&#39;re there, sitting and possibly watching as the snow continues to gather on the window seal.
 
 Someone is behind me. I can smell their too-much perfume,  feel the primal pull of their gravity before I hear their voice. It&#39;s the other woman.
 
@@ -248,7 +227,7 @@ Someone is behind me. I can smell their too-much perfume,  feel the primal pull 
 (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
 [ [[Don&#39;t turn around.]]]
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Run away down the street.]]]</tw-passagedata><tw-passagedata pid="15" name="Watch the snowfall on the window." tags="window-2" position="3000,1450" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The snowflakes fall without purpose. The wick flickers. Any snow that gets too close evaporate before it can make a difference. The candle has carved a crater around itself, preserving its slim wax neck.
+[ [[Run away down the street.]]]</tw-passagedata><tw-passagedata pid="13" name="Watch the snowfall on the window." tags="window-2" position="3000,1450" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The snowflakes fall without purpose. The wick flickers. Any snow that gets too close evaporate before it can make a difference. The candle has carved a crater around itself, preserving its slim wax neck.
 
 Now and then it lights enough to show the woman&#39;s lips. She is neither smiling nor frowning. I watch for a while.
 
@@ -262,7 +241,7 @@ Someone is behind me. I can smell their too-much perfume, feel the primal pull o
 [ [[Don&#39;t turn around.]]]
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Run away down the street.]]]
-</tw-passagedata><tw-passagedata pid="16" name="Call to her again." tags="window-2" position="2525,1600" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The woman turns to face the obscurity of her room. Then a man appears beside her. He is muscular, faceless and menacing. The woman puts out the candle. The window turns black, but I know they&#39;re still there, sitting and watching as the snow continues to gather on their window seal.
+</tw-passagedata><tw-passagedata pid="14" name="Call to her again." tags="window-2" position="2525,1600" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The woman turns to face the obscurity of her room. Then a man appears beside her. He is muscular, faceless and menacing. The woman puts out the candle. The window turns black, but I know they&#39;re still there, sitting and watching as the snow continues to gather on their window seal.
 
 Someone is behind me. I can smell their too-much perfume, feel the primal pull of their gravity before I hear their voice. It&#39;s the other woman.
 
@@ -273,14 +252,14 @@ Someone is behind me. I can smell their too-much perfume, feel the primal pull o
 (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
 [ [[Don&#39;t turn around.]]]
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Run away down the street.]]]</tw-passagedata><tw-passagedata pid="17" name="Turn around." tags="window-2" position="2950,1750" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The street is empty, except for the bicycles. They are propped up in rows, seats and handles veiled in snow. The bells of the Dom Tower start again.
+[ [[Run away down the street.]]]</tw-passagedata><tw-passagedata pid="15" name="Turn around." tags="window-2" position="2950,1750" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The street is empty, except for the bicycles. They are propped up in rows, seats and handles veiled in snow. The bells of the Dom Tower start again.
 
 Looking back, the door of the red-shuttered building is open.
 ](t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
 [
 [[Enter the building.]]]
 (t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="18" name="Don&#39;t turn around." tags="warped-snow" position="2650,1775" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Everything fades. The cold comes in as I shut my eyes. What was I doing?
+[ [[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="16" name="Don&#39;t turn around." tags="warped-snow" position="2650,1775" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Everything fades. The cold comes in as I shut my eyes. What was I doing?
 
 It doesn&#39;t matter anymore. I can&#39;t breathe. I&#39;ve got to move on.
 
@@ -289,14 +268,14 @@ The cat shakes its collar in the distance.
 [ 
 [[Go search for the cat.]]]
  (t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="19" name="Run away down the street." tags="warped-snow" position="2800,1750" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Running is slow for an insomniac. It is reckless, like driving on narcotics. The muscles sedate themselves. They know they&#39;re supposed to be in stasis, so they turn off. I run nonetheless, stumbling over the cobblestones. The way gets narrower, buildings pressing closer as if to blugeon me to sleep or something else.
+[ [[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="17" name="Run away down the street." tags="warped-snow" position="2800,1750" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Running is slow for an insomniac. It is reckless, like driving on narcotics. The muscles sedate themselves. They know they&#39;re supposed to be in stasis, so they turn off. I run nonetheless, stumbling over the cobblestones. The way gets narrower, buildings pressing closer as if to blugeon me to sleep or something else.
 
 I can&#39;t think like that. I can&#39;t breathe.
 ](t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
 [
 [[Keep running.]]]
 (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
-[ [[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="20" name="Enter the building." tags="window-2" position="3200,1725" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Each step creaks beneath my weight, as if about to split in. The stairs turn, brightening to a pale moonlight falling through the clouds and onto the railings looking over a square garden. The whole place blooms with scents of small flowers, old wine and cigarettes.
+[ [[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="18" name="Enter the building." tags="window-2" position="3200,1725" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Each step creaks beneath my weight, as if about to split in. The stairs turn, brightening to a pale moonlight falling through the clouds and onto the railings looking over a square garden. The whole place blooms with scents of small flowers, old wine and cigarettes.
 
 One staircase leads down into the courtyard. Another leads up to some second floor apartments. The cat is there, poking its head through the wooden slats, staring down at me.
 ](t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
@@ -305,7 +284,7 @@ One staircase leads down into the courtyard. Another leads up to some second flo
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Go downstairs.]]]
 (t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Leave.]]]</tw-passagedata><tw-passagedata pid="21" name="Walk the rest of the street." tags="warped-snow" position="2550,2450" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The snow lays down like sheets of music in the black notes of the cobblestone. Everything is silent once more. I go down the laneway like a man down a river. 
+[ [[Leave.]]]</tw-passagedata><tw-passagedata pid="19" name="Walk the rest of the street." tags="warped-snow" position="2550,2450" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The snow lays down like sheets of music in the black notes of the cobblestone. Everything is silent once more. I go down the laneway like a man down a river. 
 
 I don&#39;t remember how I got here, but I&#39;m here and it is beautiful. 
 
@@ -318,7 +297,7 @@ I know now why she moved here after everything.
 There are Christmas trees in windows all along the avenue. The city is still sleeping. Did she come here with him?]
 
 (t8n-delay: 6s) + (t8n: &quot;fade-down&quot;) 
-[ [[Walk towards the tower.]]]</tw-passagedata><tw-passagedata pid="22" name="Keep running." tags="warped-snow" position="2825,2025" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Cold gets in like poison. Frost comes out. Cold gets in like poison. Frost comes out. Cold gets in.
+[ [[Walk towards the tower.]]]</tw-passagedata><tw-passagedata pid="20" name="Keep running." tags="warped-snow" position="2825,2025" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Cold gets in like poison. Frost comes out. Cold gets in like poison. Frost comes out. Cold gets in.
 
 I don&#39;t remember how I got here, but I&#39;m here and it is painful.
 
@@ -330,42 +309,42 @@ There are Christmas trees in windows here, lit by the snow on their panes. The g
 ]
 (t8n-delay: 6.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Walk towards the tower.]]]
-</tw-passagedata><tw-passagedata pid="23" name="Look to the tower." tags="footprint" position="2350,1400" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Its tall silhouette makes the city seem small, like a tree among shrubs. You can see right through its glassless stone windows to the other side. It isn&#39;t snowing over there. The stars in the distance are countless, uncovered and bright. 
+</tw-passagedata><tw-passagedata pid="21" name="Look to the tower." tags="footprint" position="2350,1400" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Its tall silhouette makes the city seem small, like a tree among shrubs. You can see right through its glassless stone windows to the other side. It isn&#39;t snowing over there. The stars in the distance are countless, uncovered and bright. 
 
 &lt;p&gt;//I feel it—my blood pumping through me like a worm through the dirt. It goes through my limbs, aching and numb and sleepless.&lt;/p&gt;&lt;p&gt;The stars are out, hanging in different arrangements above the house. The cat comes scratching the paint at the front door, collar jingling. It runs in with a rat in its mouth when I let it in.&lt;/p&gt;&lt;p&gt;Maryanne is out somewhere again.//&lt;/p&gt;
 
 The collar jingles somewhere else along the Dutch rooftops. It meows inscrutably in a nearby street.
 ]
 (t8n-delay: 6.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Turn the corner.]]]</tw-passagedata><tw-passagedata pid="24" name="Go upstairs." tags="window-2" position="3450,1850" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat is scratching at a thin red door.
+[ [[Turn the corner.]]]</tw-passagedata><tw-passagedata pid="22" name="Go upstairs." tags="window-2" position="3450,1850" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat is scratching at a thin red door.
 ](t8n-delay: 1s) + (t8n: &quot;fade-down&quot;) 
 [
 [[Turn the handle.]]]
 (t8n-delay: 1.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Go downstairs.]]]
 (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
-[ [[Leave.]]]</tw-passagedata><tw-passagedata pid="25" name="Go downstairs." tags="window-2" position="3075,1850" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I go down into the low hedges, step around the fountain in the centre. The cat-headed spout is no longer pouring water. The basin is dry. The moonlight gets into the flowers. The forget-me-nots, the daffodils, the poppies. A phone is ringing somewhere.
+[ [[Leave.]]]</tw-passagedata><tw-passagedata pid="23" name="Go downstairs." tags="window-2" position="3075,1850" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I go down into the low hedges, step around the fountain in the centre. The cat-headed spout is no longer pouring water. The basin is dry. The moonlight gets into the flowers. The forget-me-nots, the daffodils, the poppies. A phone is ringing somewhere.
 ](t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
 [
 [[Smell the flowers.]]]
 (t8n-delay: 3s) + (t8n: &quot;fade-down&quot;) 
 [ [[Look for the phone.]]]
 (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Go back upstairs.]]]</tw-passagedata><tw-passagedata pid="26" name="Leave." tags="warped-snow" position="3250,1900" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The door is closed. It won&#39;t open again. The red shutters are shuttered. The white of its walls is now dark and blue beneath the stars, as though we&#39;re underwater. The feeling of everything is in my throat. 
+[ [[Go back upstairs.]]]</tw-passagedata><tw-passagedata pid="24" name="Leave." tags="warped-snow" position="3250,1900" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The door is closed. It won&#39;t open again. The red shutters are shuttered. The white of its walls is now dark and blue beneath the stars, as though we&#39;re underwater. The feeling of everything is in my throat. 
 
 It gets into my hands with heat, and I don&#39;t know why, but I feel it all again. It starts stomach, gets up my spine and into my skull, all falling down through my fingers, through my toes. The numbness of this sleeplessness is absent for a second. Why am I here again?
 
 The cat comes back, pressing into my leg and passing by, moving on.
 ](t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
 [
-[[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="27" name="Turn the handle." tags="window-2" position="3450,2000" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[&lt;p&gt;//The door opens. She is lying naked, covered in the bedsheets. The white sun is coming through the white drapes. I lay beside her. She takes my hands and kisses them. Then she reaches to the floor, picks up the cat, places him on her stomach. She watches him for a while.&lt;p&gt;&quot;What are you staring at, then?&quot;&lt;p&gt;&quot;I love you.&quot;
+[[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="25" name="Turn the handle." tags="window-2" position="3450,2000" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[&lt;p&gt;//The door opens. She is lying naked, covered in the bedsheets. The white sun is coming through the white drapes. I lay beside her. She takes my hands and kisses them. Then she reaches to the floor, picks up the cat, places him on her stomach. She watches him for a while.&lt;p&gt;&quot;What are you staring at, then?&quot;&lt;p&gt;&quot;I love you.&quot;
 //
 The cat meows. The sunlight is gone. The room is empty and full of snow. The candle is in the window, snuffed out. A chill is coming through. Its in my breath.
 ](t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
 [
 [[Go to the window.]]]
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Leave.]]]</tw-passagedata><tw-passagedata pid="28" name="Go to the window." tags="window-2" position="3450,2150" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cinder of the candle gets into my nostrils. The steeple of the church looks up at me. The Dom looks down over its head. They both look nearer than they are.
+[ [[Leave.]]]</tw-passagedata><tw-passagedata pid="26" name="Go to the window." tags="window-2" position="3450,2150" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cinder of the candle gets into my nostrils. The steeple of the church looks up at me. The Dom looks down over its head. They both look nearer than they are.
 
 Then there&#39;s a whistle above. She is on the roof, smiling down at me. 
 
@@ -374,14 +353,14 @@ Then there&#39;s a whistle above. She is on the roof, smiling down at me.
 [
 [[Climb up.]]]
 (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Leave.]]]</tw-passagedata><tw-passagedata pid="29" name="Climb up." tags="window-1" position="3250,2075" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[(text-style:&quot;emboss&quot;)[&lt;p&gt;//I pull myself up. The tiles are warm. The sunset is all over the blanket she&#39;s lain out. She helps me up. There&#39;s a bottle of wine in her hand. We sit together, slanted and facing the street. She pulls out a packet of smokes. We smoke them, drinking from the bottle and kissing as the sun goes down.&lt;p&gt;&quot;These taste terrible&quot;, I tell her. She tells me she&#39;s sorry. That she didn&#39;t have time to brush. We laugh about it.//
+[ [[Leave.]]]</tw-passagedata><tw-passagedata pid="27" name="Climb up." tags="window-1" position="3250,2075" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[(text-style:&quot;emboss&quot;)[&lt;p&gt;//I pull myself up. The tiles are warm. The sunset is all over the blanket she&#39;s lain out. She helps me up. There&#39;s a bottle of wine in her hand. We sit together, slanted and facing the street. She pulls out a packet of smokes. We smoke them, drinking from the bottle and kissing as the sun goes down.&lt;p&gt;&quot;These taste terrible&quot;, I tell her. She tells me she&#39;s sorry. That she didn&#39;t have time to brush. We laugh about it.//
 
 The bells of the Dom tower toll again. I am back in the room. The window is closed. The door is open.]
 ](t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) 
 [
 [[Leave.]]]
 (t8n-delay: 5.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Go downstairs.]]]</tw-passagedata><tw-passagedata pid="30" name="Smell the flowers." tags="cat" position="3050,2025" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I close my eyes and breathe in. 
+[ [[Go downstairs.]]]</tw-passagedata><tw-passagedata pid="28" name="Smell the flowers." tags="cat" position="3050,2025" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I close my eyes and breathe in. 
 
 The scent is gentle, barely there. The cold gets into my skull as I inhale. It is sweet, damp, narcotic. 
 
@@ -392,12 +371,12 @@ I open my eyes. A phrase blooms within the arrangement of the flowers.
 (t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Look for the phone.]]]
 (t8n-delay: 3s) + (t8n: &quot;fade-down&quot;) 
-[ [[Go back upstairs.]]]</tw-passagedata><tw-passagedata pid="31" name="Look for the phone." tags="cat" position="2950,2175" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The phone is nowhere.
+[ [[Go back upstairs.]]]</tw-passagedata><tw-passagedata pid="29" name="Look for the phone." tags="cat" position="2950,2175" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The phone is nowhere.
 ] 
 (t8n-delay: .5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Smell the flowers.]]]
 (t8n-delay: 1s) + (t8n: &quot;fade-down&quot;) 
-[ [[Go back upstairs.]]]</tw-passagedata><tw-passagedata pid="32" name="Go back upstairs." tags="cat" position="3125,2150" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I walk back up the creaking steps, yet end up in the courtyard again. 
+[ [[Go back upstairs.]]]</tw-passagedata><tw-passagedata pid="30" name="Go back upstairs." tags="cat" position="3125,2150" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I walk back up the creaking steps, yet end up in the courtyard again. 
 
 I look up. The cat&#39;s still there, staring from its perch between the slats.
 
@@ -409,7 +388,7 @@ The phone is ringing louder now. The flowers are more vibrant. The water has ret
 [ [[Drink the water.]]]
 (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
 [ [[Try to go upstairs again.]]]
-(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) [ [[Breathe in the flowers.]] ] ]</tw-passagedata><tw-passagedata pid="33" name="Breathe in the flowers." tags="cat" position="3475,2325" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Sweet. Damp. Narcotic. The flowers have re-arranged themselves to say, 
+(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) [ [[Breathe in the flowers.]] ] ]</tw-passagedata><tw-passagedata pid="31" name="Breathe in the flowers." tags="cat" position="3475,2325" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Sweet. Damp. Narcotic. The flowers have re-arranged themselves to say, 
 
 &lt;p&gt;//&quot;I&#39;ll pretend too.&quot;//
 ] 
@@ -418,7 +397,7 @@ The phone is ringing louder now. The flowers are more vibrant. The water has ret
 (t8n-delay: 1.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Drink the water.]]]
 (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
-[ [[Try to go upstairs again.]]]</tw-passagedata><tw-passagedata pid="34" name="Drink the water." tags="cat" position="3325,2400" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I dip my head beneath the cat&#39;s outpouring teeth. The water is cold, pure, tasteless. I can almost feel it filling my bones. They are tired. But what&#39;s left of me is restless. All I can do is keep going. Walking and walking, like the last time I had insomnia. Walking—yet never anywhere this beautiful. 
+[ [[Try to go upstairs again.]]]</tw-passagedata><tw-passagedata pid="32" name="Drink the water." tags="cat" position="3325,2400" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I dip my head beneath the cat&#39;s outpouring teeth. The water is cold, pure, tasteless. I can almost feel it filling my bones. They are tired. But what&#39;s left of me is restless. All I can do is keep going. Walking and walking, like the last time I had insomnia. Walking—yet never anywhere this beautiful. 
 
 I see why she came here.
 ] 
@@ -426,7 +405,7 @@ I see why she came here.
 [ [[Look for the phone again.]]]
 (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Try to go upstairs again.]]]
-(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) [ [[Breathe in the flowers.]] ] ]</tw-passagedata><tw-passagedata pid="35" name="Try to go upstairs again." tags="cat" position="3100,2400" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I&#39;m careful this time, listening to each step, eyes wide, watching the cat as it watches me. It is useless. This courtyard is a trap. I can&#39;t get out. I&#39;m sure that cat is smiling between the slats.
+(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) [ [[Breathe in the flowers.]] ] ]</tw-passagedata><tw-passagedata pid="33" name="Try to go upstairs again." tags="cat" position="3100,2400" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I&#39;m careful this time, listening to each step, eyes wide, watching the cat as it watches me. It is useless. This courtyard is a trap. I can&#39;t get out. I&#39;m sure that cat is smiling between the slats.
 
 The phone rings. It rings. It rings. The fountain is flowing over its barriers and soaking my ankles. The flowers are everywhere, all saying the same thing.
 ]
@@ -434,17 +413,17 @@ The phone rings. It rings. It rings. The fountain is flowing over its barriers a
 [ [[Drink water.]]]
 (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Find the damned phone.]]]
-(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) [ [[See what the flowers have to say.]] ] ]</tw-passagedata><tw-passagedata pid="36" name="Look for the phone again." tags="cat" position="2925,2300" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[This goddamn phone is nowhere.
+(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) [ [[See what the flowers have to say.]] ] ]</tw-passagedata><tw-passagedata pid="34" name="Look for the phone again." tags="cat" position="2925,2300" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[This goddamn phone is nowhere.
 ]
 (t8n-delay: 1s) + (t8n: &quot;fade-down&quot;) 
 [ [[Drink the water.]]]
 (t8n-delay: 1.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Try to go upstairs again.]]]
-(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [ [[Breathe in the flowers.]] ] ]</tw-passagedata><tw-passagedata pid="37" name="Drink water." tags="cat" position="2950,2475" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The water burns my throat with cold.
+(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [ [[Breathe in the flowers.]] ] ]</tw-passagedata><tw-passagedata pid="35" name="Drink water." tags="cat" position="2950,2475" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The water burns my throat with cold.
 ]
 (t8n-delay: .5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Find the damned phone.]]]
-(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 1s) + (t8n: &quot;fade-down&quot;) [ [[See what the flowers have to say.]] ] ]</tw-passagedata><tw-passagedata pid="38" name="See what the flowers have to say." tags="cat" position="3150,2600" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[&lt;p&gt;//&quot;You have to let me go&quot;//
+(if: (visited: &quot;Smell the flowers.&quot;))[ (t8n-delay: 1s) + (t8n: &quot;fade-down&quot;) [ [[See what the flowers have to say.]] ] ]</tw-passagedata><tw-passagedata pid="36" name="See what the flowers have to say." tags="cat" position="3150,2600" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[&lt;p&gt;//&quot;You have to let me go&quot;//
 (click-replace: &quot;go&quot;) [let you go]
 &lt;p&gt;//The rain is coming down heavy on the front porch. Her bell rings through the patter. She is coming up the driveway, soaked all the way through her yellow raincoat. Her makeup is smeared, but she doesn&#39;t care. Her smile&#39;s in her eyes and cheeks and teeth and she is laughing about something that happened on the way home.&lt;p&gt;Her basket&#39;s full of flowers—blue, red and yellow. She comes up to the porch, hands them to me, pulls me into the rains, laughing.//
 
@@ -453,10 +432,10 @@ The water from the fountain keeps on rising. It&#39;s at my waist now. Any furth
 [
 [[Drink water.]]]
 (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
-[ [[Find the damned phone.]]]</tw-passagedata><tw-passagedata pid="39" name="Find the damned phone." tags="cat" position="3350,2550" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The phone is in my pocket. I take it out. It&#39;s a private number.
+[ [[Find the damned phone.]]]</tw-passagedata><tw-passagedata pid="37" name="Find the damned phone." tags="cat" position="3350,2550" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The phone is in my pocket. I take it out. It&#39;s a private number.
 ](t8n-delay: 1s) + (t8n: &quot;fade-down&quot;) 
 [
-[[Answer.]]]</tw-passagedata><tw-passagedata pid="40" name="Answer." tags="warped-snow" position="3175,2750" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[//&lt;p&gt;I don&#39;t recognise the voice. And then I do. It is her mother. She tells me her daughter is dead. I tell her I am sorry. She tells me she is sorry too. She says the funeral&#39;s in Utrecht. She says she lived there after the divorce. I don&#39;t ask how it happened. I don&#39;t want to know and she doesn&#39;t want to say it.&lt;/p&gt;&lt;p&gt;I hang up.&lt;/p&gt;//
+[[Answer.]]]</tw-passagedata><tw-passagedata pid="38" name="Answer." tags="warped-snow" position="3175,2750" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[//&lt;p&gt;I don&#39;t recognise the voice. And then I do. It is her mother. She tells me her daughter is dead. I tell her I am sorry. She tells me she is sorry too. She says the funeral&#39;s in Utrecht. She says she lived there after the divorce. I don&#39;t ask how it happened. I don&#39;t want to know and she doesn&#39;t want to say it.&lt;/p&gt;&lt;p&gt;I hang up.&lt;/p&gt;//
 I&#39;m on the street again. Back in front of the building. 
 
 The door is closed. It won&#39;t open again. The red shutters are shuttered. The white of its walls is now dark and blue beneath the stars, as though we&#39;re underwater. The feeling of everything is in my throat. 
@@ -466,7 +445,7 @@ It gets into my hands with heat, and I don&#39;t know why, but I feel it all aga
 The cat comes back, pressing into my leg and passing by, moving on.
 ](t8n-delay: 7.5s) + (t8n: &quot;fade-down&quot;) 
 [
-[[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="41" name="Turn the corner." tags="footprint" position="2025,1775" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat is back. It is batting its tail, sitting on the snowdraped branch of a maple tree. The tree is pushing through the centre of this cobblestoned intersection. The other road keeps going, crossing the canal towards the base of the tower.
+[[Walk the rest of the street.]]]</tw-passagedata><tw-passagedata pid="39" name="Turn the corner." tags="footprint" position="2025,1775" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat is back. It is batting its tail, sitting on the snowdraped branch of a maple tree. The tree is pushing through the centre of this cobblestoned intersection. The other road keeps going, crossing the canal towards the base of the tower.
 
 A bicycle rings twice as the woman in yellow goes past—tires tracking through the powdered snow. She passes over into the shadow of the tower.
 
@@ -475,7 +454,7 @@ She is gone but her bell keeps singing, down into the waters and up again to min
 [ 
 [[Pet the cat.]]]
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Cross over.]]]</tw-passagedata><tw-passagedata pid="42" name="Walk towards the tower." tags="warped-snow" position="2300,1775" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat is back. It is batting its tail, sitting on the snowdraped branch of a maple tree. The tree is pushing through the centre of this cobblestoned intersection. The road keeps going, crossing the canal towards the base of the tower.
+[ [[Cross over.]]]</tw-passagedata><tw-passagedata pid="40" name="Walk towards the tower." tags="warped-snow" position="2300,1775" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The cat is back. It is batting its tail, sitting on the snowdraped branch of a maple tree. The tree is pushing through the centre of this cobblestoned intersection. The road keeps going, crossing the canal towards the base of the tower.
 
 A bicycle rings twice as the woman in yellow goes past—tires tracking through the powdered snow. She passes over into the shadow of the tower.
 
@@ -484,7 +463,7 @@ She is gone but her bell keeps singing, down into the waters and up again to min
 [ 
 [[Pet the cat.]]]
 (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Cross over.]]]</tw-passagedata><tw-passagedata pid="43" name="Pet the cat." tags="signpost" position="2200,2000" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I reach up to pet the cat. Its tail evades my fingertips.
+[ [[Cross over.]]]</tw-passagedata><tw-passagedata pid="41" name="Pet the cat." tags="signpost" position="2200,2000" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I reach up to pet the cat. Its tail evades my fingertips.
 
 There&#39;s that scent again. That too-much perfume of the other woman.
 
@@ -494,44 +473,27 @@ The cat claws at my hand. It is reaching down from the branch to bite and lick. 
 
 The woman on the bridge is still there, gazing over the canal.]
 (t8n-delay: 7s) + (t8n: &quot;fade-down&quot;) 
-[ [[Cross over.]]]</tw-passagedata><tw-passagedata pid="44" name="Approach the woman on the bridge." tags="distance" position="875,1950" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[Her face is morose, listlessly staring into nothingness, somewhere over there. The black waters of the canal slug through the clustered streets, beneath bridges and bridges until obscurity.
-](t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
-[ 
-[[&quot;Why are you awake?&quot;]]]
-(t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[&quot;What are you looking at?&quot;]]]
-(t8n-delay: 3s) + (t8n: &quot;fade-down&quot;) 
-[ [[Say nothing. Sit with her.]]]
-(t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Move on.]]]
-</tw-passagedata><tw-passagedata pid="45" name="Say nothing. Sit with her." tags="distance" position="1025,1950" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[It&#39;s as though I don&#39;t exist. She continues to stare, vaguely and silently, ambivalent to my embodiment.
-
-//&lt;p&gt;So often I find her like this. Freezing into solipsism—mid-cooking holding a knife to a tomato or mid-shaving with a razor to her leg. Othertimes I can&#39;t find her at all. Then I know she&#39;s gone, either up to the roof to be alone or else taken her bike and left. I ask her to come down, come home, let me help.&lt;p&gt;Where did you go?//
-
-Now she&#39;s gone altogether. I&#39;m alone again, staring out across the waters.
-]
-(t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Move on.]]]</tw-passagedata><tw-passagedata pid="46" name="Cross over." tags="signpost" position="1975,2000" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The Dom bleeds its good and haunting hum. 
+[ [[Cross over.]]]</tw-passagedata><tw-passagedata pid="42" name="Cross over." tags="signpost" position="1975,2000" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The Dom bleeds its good and haunting hum. 
 
 The snow beneath its shade is black. Black as the cat, which walks ahead between the arch of its base and through its half-cracked red-painted door.
 ]
 (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
 [ [[Enter.]]] (t8n-delay: 2.5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 2.75s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.1s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.2s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Enter.]]] (t8n-delay: 3.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.8s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.9s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.1s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.2s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.8s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.9s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.1s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.2s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.8s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.9s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.1s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.2s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.8s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.9s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.1s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.2s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]]</tw-passagedata><tw-passagedata pid="47" name="Enter." tags="distance" position="1975,2150" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The bells are louder in here. They ring through the tower&#39;s hollow neck, reverberating into my spine. The blue, red and yellow stained glass windows drench the vaulted ceiling in their moonlight. The stairs ahead are snaking upwards through the stone.
+[ [[Enter.]]] (t8n-delay: 3.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.8s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 3.9s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.1s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.2s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.8s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 4.9s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.1s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.2s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.8s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 5.9s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.1s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.2s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.8s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 6.9s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.1s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.2s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.3s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.4s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.5s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]] (t8n-delay: 7.6s) + (t8n: &quot;fade-down&quot;) [ [[Enter.]]]</tw-passagedata><tw-passagedata pid="43" name="Enter." tags="distance" position="1975,2150" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The bells are louder in here. They ring through the tower&#39;s hollow neck, reverberating into my spine. The blue, red and yellow stained glass windows drench the vaulted ceiling in their moonlight. The stairs ahead are snaking upwards through the stone.
 
 And then there is that smell again. That too-much perfume. I look around, but I am all alone. All that is back there is the way I came.
 ]
 (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[I need to move on.]]] 
 (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) 
-[ [[Try to go back.]]] </tw-passagedata><tw-passagedata pid="48" name="Try to go back." tags="distance" position="1600,1800" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[My foot catches the cat and I fall. Everything flashes.
+[ [[Try to go back.]]] </tw-passagedata><tw-passagedata pid="44" name="Try to go back." tags="distance" position="1600,1800" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[My foot catches the cat and I fall. Everything flashes.
 
 //&lt;p&gt;The sunset is all over–She pulls out a packet of smokes–I tell her I am sorry–We smoke them, drinking from the bottle and kissing–&quot;Is your wife home?&quot;–It goes through my limbs, aching and numb and sleepless–The stars are out, hanging in different arrangements–I hang up–Maryanne is out somewhere again–The cat is sleeping–The sun is going down–&lt;p&gt;&quot;Are you sure you&#39;ve got to go?&quot;//
 ]
 (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
 [ [[I need to move on.]]] 
 (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) 
-[ [[I need to go back.]]] </tw-passagedata><tw-passagedata pid="49" name="I need to move on." tags="distance" position="1800,2300" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The bells get louder and louder. I go up and up. The ascent takes forever and no time at all.
+[ [[I need to go back.]]] </tw-passagedata><tw-passagedata pid="45" name="I need to move on." tags="distance" position="1800,2300" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The bells get louder and louder. I go up and up. The ascent takes forever and no time at all.
 
 Insomnia will do that to you—it skews your sense of time. It&#39;s a lot like losing someone. Sometimes you can feel it coming. It comes either way.
 
@@ -542,7 +504,7 @@ It is real and it isn&#39;t. You exist and you don&#39;t. Your mind can itself a
 The cat is waiting for me when I get to the top, unbothered by the noise.
 ]
 (t8n-delay: 5.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Go through.]]] </tw-passagedata><tw-passagedata pid="50" name="Go through." tags="snowdrops" position="1700,2500" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I go in.
+[ [[Go through.]]] </tw-passagedata><tw-passagedata pid="46" name="Go through." tags="distance" position="1700,2500" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[I go in.
 
 //&lt;p&gt;It is quiet. I am waiting in the dark by the window, listening as Maryanne pulls up in someone else&#39;s car. I can hear her voice beneath the engine. The car drives off. She puts her key in the door. I get in bed and pretend to be asleep.&lt;p&gt;She comes in, undresses with the lights off. Then she lays down beside me, kisses my neck.//
 
@@ -553,36 +515,62 @@ A draft is coming in through an open doorway. The yellow raincoat hangs from the
 (t8n-delay: 4.5s) + (t8n: &quot;fade-down&quot;) 
 [ [[Go through the door.]]] 
 (t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Pick up the yellow raincoat.]]] </tw-passagedata><tw-passagedata pid="51" name="Pick up the yellow raincoat." tags="snowdrops" position="1900,2500" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The bells are unbearable. They rattle through my skull. 
+[ [[Pick up the yellow raincoat.]]] </tw-passagedata><tw-passagedata pid="47" name="Pick up the yellow raincoat." tags="distance" position="1900,2500" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The bells are unbearable. They rattle through my skull. 
 
 I run my fingers down the jacket-lining. It reeks of smokes and wine.
 
 //&lt;p&gt;The Christmas tree is on the lawn. She&#39;s packing the car beside it. It is raining out. Her raincoat is on. &quot;Of course I love you,&quot; she says. &quot;But&quot; (click-replace: &quot;But&quot;) [But we aren&#39;t who we were before] (click-replace: &quot;before&quot;) [before we met. We were kids, and] (click-replace: &quot;, and&quot;) [, and we didn&#39;t know anything] (click-replace: &quot;anything&quot;) [anything about ourselves or the lives we wanted.] (click-replace: &quot;wanted.&quot;) [wanted. It isn&#39;t your fault.] (click-replace: &quot;your fault.&quot;) [your fault. But you have to let me go.]// ]
 
 (t8n-delay:12.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[Go through the door.]]] </tw-passagedata><tw-passagedata pid="52" name="Go through the door." tags="snowdrops" position="1800,2700" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The snow is coming down in tangents onto the balcony. It is black out still. And there&#39;s that too-much perfume on the wind.
+[ [[Go through the door.]]] </tw-passagedata><tw-passagedata pid="48" name="Go through the door." tags="snowdrops" position="1800,2700" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The snow is coming down in tangents onto the balcony. It is black out still. And there&#39;s that too-much perfume on the wind.
 
 //&lt;p&gt;There are no bells here. Just me and the cat and the other woman. &quot;Is your wife home?&quot; she asks again.&lt;p&gt;&quot;No,&quot; I tell her. She has sad, beautiful brown hair.&lt;p&gt;&quot;Her name is Maryanne?&quot;&lt;p&gt;&quot;It is, do you know her?&quot;&lt;p&gt;&quot;Yes. She&#39;s been sleeping with my husband.&quot;//
 
 The Dom comes back. Maryanne is here, sitting on a ledge stone and looking over the city. She is drinking from the wine bottle and smoking. 
 
-She turns, smiles at me, holds out the bottle, says, &quot;One for the road?&quot;
+//&lt;p&gt;She turns, smiles at me, holds out the bottle and says, &quot;One for the road?&quot;//
 ]
 (t8n-delay: 5s) + (t8n: &quot;fade-down&quot;)
 [ [[&quot;Okay.&quot;]]] 
 (t8n-delay: 5.5s) + (t8n: &quot;fade-down&quot;) 
-[ [[&quot;Why did you have to leave?&quot;]]]</tw-passagedata><tw-passagedata pid="53" name="&quot;Okay.&quot;" tags="" position="2075,2850" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[She hands me the wine. Puts a smoke in my mouth and lights it. It tastes how I remember. The canals are stretching through the snow. Everything is small and grey. I look at Maryanne and want to smile with her. But I can&#39;t. She is staring at my lips. 
+[ [[&quot;You&#39;re not really here.&quot;]]]</tw-passagedata><tw-passagedata pid="49" name="&quot;Okay.&quot;" tags="snowdrops" position="2075,2800" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[She hands me the wine. Puts a smoke in my mouth and lights it. Its as sweet and as bitter as I remember. 
 
-&quot;Pretend I&#39;m still here,&quot; she says. &quot;Pretend I&#39;m not gone. I&#39;ll pretend too.&quot;
+The canals are stretching through the snow. Everything is small and grey. I look at Maryanne and want to smile with her. 
+
+She is staring at my lips. &quot;Pretend I&#39;m still here,&quot; she says. &quot;Pretend I&#39;m not gone, and I&#39;ll pretend too.&quot;
 ]
 (t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;)
 [ [[Kiss her.]]] 
 (t8n-delay: 4s) + (t8n: &quot;fade-down&quot;)
-[ [[&quot;I can&#39;t do it anymore.&quot;]]] 
-</tw-passagedata><tw-passagedata pid="54" name="&quot;Why did you have to leave?&quot;" tags="" position="1700,2850" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[
+[ [[&quot;I can&#39;t do this anymore.&quot;]]] 
+</tw-passagedata><tw-passagedata pid="50" name="Kiss her." tags="snowdrops" position="2500,3000" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[It is there for a moment. Then I can&#39;t feel it anymore. The sun is coming up. The snow is coming down, vanishing before it touches earth.
+
+Was she ever really here? I suppose it doesn&#39;t matter. She&#39;s gone either way and I&#39;m still here, in this place without her. 
+
+//&lt;p&gt;&quot;You have to let me go,&quot; she says. She is looking out across the skyline. The light is on her lips.//
 ]
-(t8n-delay: 5s) + (t8n: &quot;fade-down&quot;)
-[ [[]]] </tw-passagedata><tw-passagedata pid="55" name="Kiss her." tags="" position="2175,3000" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="&quot;I can&#39;t do it anymore.&quot;" tags="" position="1975,3000" size="100,100"></tw-passagedata></tw-storydata>
+(t8n-delay: 3.5s) + (t8n: &quot;fade-down&quot;)
+[ [[&quot;You have to let me let you go.&quot;]]] </tw-passagedata><tw-passagedata pid="51" name="&quot;I can&#39;t do this anymore.&quot;" tags="snowdrops" position="2125,3000" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[//&lt;p&gt;&quot;I just wanted to make you happy,&quot; I say. &quot;Why couldn&#39;t we be happy?&quot;&lt;p&gt;She looks back out across the skyline—as sad as I remember. &quot;I had to leave to find it. You have to leave me here.&quot;//
+]
+//&lt;p&gt;(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;)
+[ [[&quot;Are you sure you&#39;ve got to go?&quot;]]] // </tw-passagedata><tw-passagedata pid="52" name="&quot;You have to let me let you go.&quot;" tags="snowdrops" position="2500,3200" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[ She looks on, saying nothing, and it&#39;s as though I don&#39;t exist again. Her face is vague, ambivalent to my embodiment like it was so often. Finally I recall the pain in your eyes. 
+
+//&lt;p&gt;So often I&#39;d find her like this. Freezing into solipsism—mid-cooking chopping something or mid-shaving with a razor to her leg. Othertimes I can&#39;t find her at all. Then I know she&#39;s gone, either up to the roof to be alone or else with him. I ask her to come down, come home, let me help. But I would get nothing. I was all alone all along, staring into mirrors waiting for her to come back.//
+] //&lt;p&gt;(t8n-delay: 5s) + (t8n: &quot;fade-down&quot;)
+[ [[&quot;Were you ever really here?&quot;]]] //
+</tw-passagedata><tw-passagedata pid="53" name="&quot;Were you ever really here?&quot;" tags="clarity" position="2500,3350" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="&quot;You&#39;re not really here.&quot;" tags="snowdrops" position="1925,3000" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[//&lt;p&gt;&quot;I will always be here,&quot; she says. &quot;Always somewhere in your mind. But for now I have to go.&quot;//
+]
+//&lt;p&gt;(t8n-delay: 3s) + (t8n: &quot;fade-down&quot;)
+[ [[&quot;Are you sure you&#39;ve got to go?&quot;]]] // </tw-passagedata><tw-passagedata pid="55" name="&quot;Are you sure you&#39;ve got to go?&quot;" tags="snowdrops" position="2025,3175" size="100,100">(char-style: via (t8n-delay:pos*10)+(t8n:&#39;dissolve&#39;))[The sun is coming up. The snow is coming down, vanishing before it touches earth.
+
+&lt;p&gt;I push her face towards me. &quot;Just tell me you&#39;re sorry,&quot; I say.&lt;p&gt;&quot;You know that won&#39;t fix this. You need to forgive yourself.&quot;&lt;p&gt;&quot;I don&#39;t know how.&quot;&lt;p&gt;She pushes my face towards the sunrise. &quot;Just be where you are.&quot;
+
+The buildings are bursting in the shadows of the bronzing sky. The snow flecks golden in the breeze. 
+
+A bell jingles. A bell stops.
+
+] //&lt;p&gt;(t8n-delay: 5s) + (t8n: &quot;fade-down&quot;)
+[ [[&quot;I&#39;m sorry.&quot;]]] //</tw-passagedata><tw-passagedata pid="56" name="&quot;I&#39;m sorry.&quot;" tags="clarity" position="2025,3325" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
